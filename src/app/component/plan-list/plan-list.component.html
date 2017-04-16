@@ -1,0 +1,8 @@
+<div ngbDropdown class="d-inline-block">
+  <button class="btn btn-secondary ai-plans-button" id="plansDropdown" ngbDropdownToggle>{{ selectedPlan?.name }}<div class="dropdown-arrow"></div></button>
+  <div class="dropdown-menu" aria-labelledby="plansDropdown">
+    <button *ngFor="let plan of plans" class="dropdown-item" (click)="selectedPlan = plan">
+      <span>{{ plan?.name }}</span>
+    </button>
+  </div>
+</div>

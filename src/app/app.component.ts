@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ai-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ai works!';
+  constructor(private router: Router, private ActivatedRoute: ActivatedRoute ) {
+    router.navigate(['planning']);
+  }
 }

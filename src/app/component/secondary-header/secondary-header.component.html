@@ -1,0 +1,28 @@
+<div class="row no-gutters width-100 secondary-header">
+  <div class="col no-gutters width-100">
+    <div class="option-group">
+      <label class="option-label">Level:</label>
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-secondary ai-clear-button" id="levelsDropdown" ngbDropdownToggle>
+          {{ selectedLevel?.name }}<div class="dropdown-arrow"></div></button>
+        <div class="dropdown-menu" aria-labeledby="levelsDropdown">
+          <button *ngFor="let level of levels" class="dropdown-item" (click)="selectedLevel = level">
+            <span>{{ level?.name }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="option-group">
+      <label class="option-label">Currency:</label>
+      <div ngbDropdown class="d-inline-block option-dropdown">
+        <button class="btn btn-secondary ai-clear-button" id="currencyDropdown" ngbDropdownToggle>
+          {{ selectedCurrency?.name }}<div class="dropdown-arrow"></div></button>
+        <div class="dropdown-menu" aria-labeledby="currencyDropdown">
+          <button *ngFor="let currency of currencies" class="dropdown-item" (click)="selectedCurrency = currency">
+            <span>{{ currency?.name }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

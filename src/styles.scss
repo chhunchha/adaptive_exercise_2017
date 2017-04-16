@@ -1,1 +1,205 @@
 /* You can add global styles to this file, and also import other style files */
+
+$normal-font-size: 16px;
+$heading-font-size: 22px;
+
+$color-blue: #2980b9;
+$color-gray-concrete: #95a5a6;
+
+$brand-color: $color-blue;
+$link-color: #3498db;
+
+$color-light-font: #5d5d5d;
+
+$default-border-color: $color-gray-concrete;
+
+$header-color: #1A7B9B;
+$header-divider-color: #2A566F;
+$color-orange: #F5721B;
+
+$secondary-header-color: rgb(235, 244, 250);
+
+$bold: 600;
+
+$color-tab-container-background: #DBDBDA;
+$color-tab-background: #d1d1d1;
+$color-tab-border: #bbbaba;
+
+body {
+    font-size: $normal-font-size;
+    margin: 0px
+}
+
+.box-border {
+    border: 1px solid $default-border-color;
+}
+
+.right-border {
+    border-right: 1px solid $default-border-color;
+}
+
+.left-border {
+    border-left: 1px solid $default-border-color;
+}
+
+.bottom-border {
+    border-bottom: 1px solid $default-border-color;
+}
+
+.top-border {
+    border-top: 1px solid $default-border-color;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.ai-btn-primary {
+    background-color: $color-orange;
+    color: white;
+    font-size: 14px;
+    height: 2rem;
+    line-height: 2rem;
+    border: none;
+    outline: none;
+    width: 70px;
+}
+
+.divider-border-left {
+    border-left: 2px solid $header-divider-color;
+}
+
+.divider-border-right {
+    border-right: 2px solid $header-divider-color;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+
+    .dropdown-item {
+        padding: 5px;
+    }
+}
+
+.dropdown-arrow {
+    display: inline;
+}
+
+.option-group {
+    display: table-cell;
+    font-size: 14px;
+    height: 3rem;
+    vertical-align: middle;
+
+    .option-label {
+        font-weight: bold;
+    }
+
+    .option-dropdown {
+        display: inline-block;
+
+    }
+}
+
+.ai-clear-button {
+    border: none;
+    outline: none;
+    color: $header-color;
+    font-size: 14px;
+    background: transparent;
+    padding: .5rem 1rem .5rem 0.1rem;
+
+    &:hover, &:active, &:focus {
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.tabs-container {
+    height: 3rem;
+    background-color: $color-tab-container-background;
+    font-size: 14px;
+
+    .ai-tab {
+        color: $color-light-font;
+        display: inline-block;
+        margin: 0px 5px;
+        border: 1px solid $color-tab-border;
+        font-weight: $bold;
+        padding: 5px 10px 0px 10px;
+        height: 33px;
+        margin-top: 15px;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+        min-width: 100px;
+        text-align: center;
+        background-color: $color-tab-background;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .ai-tab-active {
+        color: $header-color;
+        background-color: white;
+        border: 1px solid $header-color;
+    }
+}
+
+.ai-data-table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+
+    caption {
+       text-align: left; 
+       caption-side: top;
+    }
+
+    tr {
+        // @extend .bottom-border;
+
+        &:first-child td{
+            text-align: left !important;
+            font-weight: $bold
+        }
+
+        td {
+            padding: 5px;
+            text-align: right;
+            @extend .box-border;
+
+            &:first-child {
+                text-align: left !important;
+                font-weight: $bold;
+            }
+        }
+    }
+
+}
+
+.under-construction {
+    background: url(/assets/Under_Construction_03.gif) no-repeat center center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    
+    &::after {
+        content: "Under Construction";
+    }
+}

@@ -1,0 +1,11 @@
+<div class="row width-100 height-100 no-gutters">
+  <div class="col width-100 height-100 no-gutters">
+    <ul class="tabs-container width-100">
+      <li class="ai-tab" *ngFor="let tab of tabs" [routerLink]="tab.link"                 
+      routerLinkActive="ai-tab-active" #rla="routerLinkActive">
+        {{tab.title}}
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+</div>

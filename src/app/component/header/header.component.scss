@@ -1,0 +1,27 @@
+@import 'src/styles.scss';
+
+.main-header {
+    background-color: $header-color;
+    height: 3rem;
+    line-height: 3rem;
+
+    .title {
+        color: white;
+        font-size: 22px;
+        padding-left: 10px;
+        letter-spacing: 0.2px;
+        display: inline-block
+    }
+
+    .done-button {
+        @extend .divider-border-left;
+        @extend .divider-border-right;
+        padding: 0px 20px;
+        height: 3rem;
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-right: 10px;
+    }
+}
+

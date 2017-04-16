@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+.ai-navbar {
+    padding: 10px 10px 7px 10px;
+}
+
+.menu-icon {
+    display: inline;
+    position: relative;
+    top: 7px;
+    i {
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.ai-navbar-brand-heading1 {
+    font-size: 14px;
+    color: $brand-color;
+    font-weight: $bold;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 3px;
+    display: inline
+}
+
+.ai-navbar-brand-heading2 {
+    font-size: 14px;
+    color: $link-color;
+    @extend .left-border;
+    display: inline;
+    padding-left: 7px;
+}
+
+
+.ai-logo {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+}
+
+.plan-list {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
