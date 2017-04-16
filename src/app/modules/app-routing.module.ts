@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainContainerComponent } from '../component/main-container/main-container.component';
-import { PlanningContainerComponent } from '../component/planning-container/planning-container.component';
-import { StaffingComponent } from '../component/staffing/staffing.component';
-import { RampComponent } from '../component/ramp/ramp.component';
-import { TerritoriesComponent } from '../component/territories/territories.component';
-import { UnderConstructionComponent } from '../component/under-construction/under-construction.component';
+import { MainContainerComponent } from '../components/main-container/main-container.component';
+import { PlanningContainerComponent } from '../components/planning-container/planning-container.component';
+import { StaffingComponent } from '../components/staffing/staffing.component';
+import { RampComponent } from '../components/ramp/ramp.component';
+import { TerritoriesComponent } from '../components/territories/territories.component';
+import { UnderConstructionComponent } from '../components/under-construction/under-construction.component';
 
 const routes: Routes = [
   {
