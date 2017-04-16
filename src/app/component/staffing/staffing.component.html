@@ -1,23 +1,26 @@
-<div class="row no-gutters width-100 height-100">
-  <div class="col no-gutters width-100 height-100">
-    
-    <div class="staffing-data">
-      <table class="ai-data-table">
-        <caption>{{staffingTitle}}</caption>
-        <tr *ngFor="let row of staffingData; let i = index">
-          <td *ngFor="let cell of row">
-            {{cell}}
-          </td>
-        </tr>
-      </table>
-    </div>
+<div class="container-fluid pane-container" >
+  <div class="row no-gutters width-100 height-100">
+    <div class="col no-gutters width-100 height-100">
 
-    <div style="display: block" class="staffing-chart">
-      <ai-multibarchart
-      [chartTitle]="chartTitle"
-      [barChartLabels]="barChartLabels"
-      [barChartData]="barChartData">
-      </ai-multibarchart>
-  </div>
+      <div class="staffing-data">
+        <table class="ai-data-table">
+          <caption>{{staffingTitle}}</caption>
+          <tr *ngFor="let row of staffingData; let i = index">
+            <td *ngFor="let cell of row">
+              {{cell}}
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="padding-left: 20px">
+        <input type="checkbox" #shadow>
+        <label> Shadow</label>
+      </div>
+      <div style="display: block" class="staffing-chart" [ngClass]="{'box-shadow': shadow.checked}">
+        <ai-multibarchart [chartTitle]="chartTitle" [barChartLabels]="barChartLabels" [barChartData]="barChartData">
+        </ai-multibarchart>
+      </div>
+    </div>
   </div>
 </div>

@@ -6,11 +6,12 @@
 
 .menu-icon {
     display: inline;
-    position: relative;
-    top: 7px;
+    position: absolute;
+    top: 12px;
     i {
         font-weight: 700;
         color: black;
+        font-size: 30px;
     }
 }
 
@@ -23,7 +24,7 @@
     color: $brand-color;
     font-weight: $bold;
     padding-top: 0;
-    padding-left: 10px;
+    padding-left: 45px;
     padding-right: 3px;
     display: inline
 }
