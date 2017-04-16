@@ -73,14 +73,16 @@ body {
 }
 
 .ai-btn-primary {
-    background-color: $color-orange;
+    background-color: #F5721B;
     color: white;
     font-size: 14px;
-    height: 2rem;
+    height: 2.5rem;
     line-height: 2rem;
     border: none;
     outline: none;
     width: 70px;
+    top: -2px;
+    position: relative;;
 }
 
 .divider-border-left {
@@ -227,4 +229,10 @@ body {
     &::after {
         content: "Under Construction";
     }
+}
+
+.edit-icon {
+    position: relative;
+    top: 3px;
+    font-size: 18px;
 }
