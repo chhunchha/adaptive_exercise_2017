@@ -5,6 +5,7 @@ import { PlanningContainerComponent } from '../component/planning-container/plan
 import { StaffingComponent } from '../component/staffing/staffing.component';
 import { RampComponent } from '../component/ramp/ramp.component';
 import { TerritoriesComponent } from '../component/territories/territories.component';
+import { UnderConstructionComponent } from '../component/under-construction/under-construction.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,8 @@ const routes: Routes = [
         path: 'planning', component: PlanningContainerComponent,
         children: [
           { path: 'staffing', component: StaffingComponent },
-          { path: 'ramp', component: RampComponent },
-          { path: 'territories', component: TerritoriesComponent }
+          { path: 'ramp', component: UnderConstructionComponent },
+          { path: 'territories', component: UnderConstructionComponent }
         ]
       }
     ]

@@ -18,6 +18,7 @@ import { RampComponent } from './component/ramp/ramp.component';
 import { TerritoriesComponent } from './component/territories/territories.component';
 import { ChartsModule } from 'ng2-charts';
 import { MultibarchartComponent } from './component/multibarchart/multibarchart.component';
+import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MultibarchartComponent } from './component/multibarchart/multibarchart.
     StaffingComponent,
     RampComponent,
     TerritoriesComponent,
-    MultibarchartComponent
+    MultibarchartComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
